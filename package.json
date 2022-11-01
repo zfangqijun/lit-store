@@ -1,0 +1,43 @@
+{
+  "name": "@wado/lit-store",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lit-store.js",
+  "types": "lit-store.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zfangqijun <zfangqj@qq.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zfangqijun/lit-store"
+  },
+  "homepage": "https://github.com/zfangqijun/lit-store",
+  "files": [
+    "lit-store.js",
+    "lit-store.d.ts",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "lit-store",
+    "lit",
+    "lit-element",
+    "lit-html",
+    "web-component",
+    "state-management",
+    "lit-redux",
+    "lit-mobx"
+  ],
+  "devDependencies": {
+    "@types/events": "^3.0.0",
+    "events": "^3.3.0",
+    "typescript": "^4.8.4"
+  },
+  "peerDependencies": {
+    "@types/events": "^3.0.0",
+    "events": "^3.3.0"
+  }
+}
