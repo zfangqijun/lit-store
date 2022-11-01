@@ -30,14 +30,5 @@
     "state-management",
     "lit-redux",
     "lit-mobx"
-  ],
-  "devDependencies": {
-    "@types/events": "^3.0.0",
-    "events": "^3.3.0",
-    "typescript": "^4.8.4"
-  },
-  "peerDependencies": {
-    "@types/events": "^3.0.0",
-    "events": "^3.3.0"
-  }
+  ]
 }
