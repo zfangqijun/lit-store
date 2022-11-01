@@ -1,4 +1,3 @@
-import { LitElement } from 'lit'
 import { EventEmitter } from 'events'
 
 const propSymbols = new Map<string, symbol>()
@@ -59,8 +58,10 @@ function select (storeStateName: string) {
   }
 }
 
+
+
 function connect<State extends object> (store: Store<State>) {
-  return function (superClass: typeof LitElement) {
+  return function <T extends new (...a: any[]) => any>(superClass: T): T {
     return class extends superClass {
       get store (): Store<State> {
         return store
