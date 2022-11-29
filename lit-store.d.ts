@@ -19,4 +19,4 @@ declare function connect<State extends object>(store: Store<State>): <T extends 
 
 declare function createStore<State extends object>(initialState: State): Store<State>;
 
-export { connect, select, createStore };
+export { Store, connect, select, createStore };

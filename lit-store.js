@@ -65,4 +65,4 @@ function createStore(initialState) {
     const store = new Store(initialState);
     return store;
 }
-export { connect, select, createStore };
+export { Store, connect, select, createStore };
