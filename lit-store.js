@@ -6,11 +6,11 @@ class Store extends EventEmitter {
         this.state = initialState ?? Object.create(null);
     }
     setState(name, value) {
-        this.state[name] = value;
         const symbol = propSymbols.get(name);
-        if (symbol != null) {
-            this.emit('stateChange', symbol);
-        }
+        if(symbol == null) return;
+        if(this.state[name] === value) return;
+        this.state[name] = value;
+        this.emit('stateChange', symbol);
     }
     getState(name) {
         return this.state[name];
